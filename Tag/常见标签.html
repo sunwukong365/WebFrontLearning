@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>常见标签</title>
+	<link rel="stylesheet" href="css1/reset.css">
+	<style>
+	
+	
+	</style>
+</head>
+<body>
+	<!--
+	语义：你说的话到底是什么意思
+	权重：优先先考虑谁
+	
+	title标签
+		写法：<title></title>
+		双标签
+		语义：网页标题
+		权重最大
+		
+	div标签
+		写法<div></div>
+		双标签
+		语义：无意义
+		默认样式：无
+		
+	h标签
+		h1-h6
+		写法：<h1></h1>...
+		双标签
+		语义：标题
+		默认样式：font-size font-weight margin
+		权重：h1最大 h2次之 与此类推
+			h1页面中最好不要超过一个，h2一般页面中不要超过12个，h3之后的h标签没有限制要求
+	
+	p标签
+		写法：<p></p>
+		双标签
+		语义：段落
+		默认样式：比如margin
+		P标签在嵌套时不要包含块元素的标签，比如P标签，div标签
+	
+	样式初始化文件 reset.css
+	
+	群组选择器，例：
+	h1,h2,h3,h4,h5,h6,p{
+		margin:0;
+		}
+	ul标签
+		写法: <ul></ul>
+		双标签
+		语义：无序列表
+		默认样式：margin padding-left list-style-type
+	li标签：
+		写法：<li></li>
+		双标签
+		语义：列表项
+		默认样式：list-style-type
+	ol标签
+		写法：<ol></ol>
+		双标签
+		语义：有序列表
+		默认样式：margin padding-left list-style-type
+	
+	ul,ol和li是组合标签，ul,ol的第一层子级一定是li,li的父级是ul或ol
+	以下是错误写法：
+	<ul>
+		<h2></h2>
+	</ul>
+	正确写法为：
+	<ul>
+		<li>
+			<h2></h2>
+		</li>
+	</ul>
+	
+	dl: 
+		写法: <dl></dl>
+		双标签
+		语义：自定义列表，字典标签
+		默认样式：margin
+	dt: 
+		写法: <dt></dt>
+		双标签
+		语义：列表标题
+		默认样式：none
+	dd: 
+		写法: <dd></dd>
+		双标签
+		语义：列表说明
+		默认样式：margin-left
+		
+	
+	-->
+	<div>我是div</div>
+	<h1>this is h1</h1>
+	<h2>this is h2</h2>
+	<h3>this is h3</h3>
+	<h4>this is h4</h4>
+	<h5>this is h5</h5>
+	<h6>this is h6</h6>
+	<p>this is p</p>
+	<!-- 不要这样嵌套P标签 -->
+	<!--
+	<p>
+	我是P1
+	<p>我是P2</P>
+	</p>
+	-->
+	<ul>
+		<li>我是li1</li>
+		<li>我是li2</li>
+		<li>我是li3</li>
+		<li>我是li4</li>
+	</ul>
+	<ol>
+		<li>我是li1</li>
+		<li>我是li2</li>
+		<li>我是li3</li>
+		<li>我是li4</li>
+	</ol>
+	
+	<dl>
+		<dt>美女</dt>
+		<dd>古代用来形容女子很漂亮</dd>
+		<dd>打招呼</dd>
+	</dl>
+	
+</body>
+</html>

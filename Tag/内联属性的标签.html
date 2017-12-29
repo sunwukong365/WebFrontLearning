@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>内联属性的标签</title>
+	<link rel="stylesheet" href="css1/reset.css">
+	<style>
+		body {
+		font-size: 20px;
+		}
+		
+		div,span {
+		border: 1px solid red;
+		<!--width:100px;
+		height:100px;
+		padding:20px;
+		margin:20px; -->
+		}
+		
+		img {
+			width:300px;
+			height:100px;
+			padding:10px;
+			margin:20px;
+			border:1px solid red;
+			}
+	</style>
+</head>
+<body>
+<!--
+	内联属性的标签
+		内联标签
+		特性：
+		1.同属性的标签排在同一行
+		2.内容撑开宽度
+		3.不支持宽高,不支持上下的padding和margin
+		4.代码换行被解析,间距大小取决于父级的font-size大小
+		
+		span标签
+			写法：<span></span>
+			双标签
+			语义：无意义
+			默认样式：无
+		
+		strong标签
+			写法：<strong></strong>
+			双标签
+			语义：强调
+			默认样式：font-weight 
+				权重比较高
+				
+		em标签
+			写法：<em></em>
+			双标签
+			语义：强调
+			默认样式：font-style
+				权重比较高
+		
+		a标签
+			写法：<a href="需要链接的网页地址" target="打开网页的方式"></a>
+			双标签
+			语义：超链接
+			默认样式：color text-decoration cursor
+			温馨提示：
+				href属性中
+					1.如果要链接一个网站地址的话，一定要加http://
+					2.#代表链接到当前页
+				target
+					_self 默认 在当前窗口打开
+					_blank 在新窗口打开
+				
+		
+		内联块标签
+			内联块属性
+				特性：
+				1.同属性的标签排在同一行
+				2.内容撑开宽度
+				3.支持所有css的样式
+				4.代码换行被解析，间距大小取决于父级的font-size大小
+				
+			img标签
+				写法: <img src="图片的路径地址" alt="图片说明">
+				单标签
+				语义：图片
+				默认样式：低版本浏览器中有默认的边框	
+				温馨小提示：
+					1.路径地址一定要正确
+					2.alt一定要写
+
+-->
+	<span>this is span1</span>
+	<span>this is span2 我比较宽</span>
+	<span>this is span3</span><span>this is span4</span>
+	<div>this is div</div>
+	<span>this is span5</span><strong>this is strong</strong>
+	<em>我是em</em>
+	<a href="#">我是A1</a>
+	<a href="http://www.baidu.com" target="_blank">链接到百度</a>
+	
+	<img src="img/car.jpg" alt="car">
+	<img src="img/car.jpg" alt="car">
+	
+</body>
+</html>
