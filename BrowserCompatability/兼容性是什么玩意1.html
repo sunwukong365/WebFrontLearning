@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性是什么玩意</title>
+	<style>
+		#box {
+			width:400px;
+			}
+		.left {
+			width:200px;
+			background:red;
+			height:300px;
+			float:left;
+			}
+		.right {
+			width:200px;
+			float:right;
+			}
+		.div {
+			width:180px;
+			height:180px;
+			padding:15px;
+			background:blue;
+			}
+	</style>
+</head>
+<body>
+	<!--
+	小工具: IETester可以模拟IE6,7,8
+	兼容性: 页面在不同的浏览器中可能会显示不同.
+	
+	在IE6下,子级的宽度会撑开父级设置好的宽度
+	温馨小提示: 盒模型的计算一定要精确,否则IE浏览器可能会显示不同
+	-->
+	
+	<div id="box">
+		<div class="left"></div>
+		<div class="right">
+			<div class="div"></div>
+		</div>
+	</div>
+</body>
+</html>
