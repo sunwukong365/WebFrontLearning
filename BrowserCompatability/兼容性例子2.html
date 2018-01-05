@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性例子</title>
+	<style>
+		.box {
+			width:400px;
+		}
+		.left {
+			background:red;
+			float:left;
+		}
+		.right {
+			background:yellow;
+			float:right;
+		}
+		h3 {
+			margin:0;
+			height:40px;
+			float:left; /*如果不加这一行，IE6不能正常显示*/
+		}
+	
+	</style>
+</head>
+<body>
+	<!--
+	在IE中，元素浮动，如果宽度需要内容撑开，需要给里面的元素都添加浮动才可以
+	
+	-->
+	<div class="box">
+		<div class="left">
+			<h3>左侧</h3>
+		</div>
+		<div class="right">
+			<h3>右侧</h3>
+		</div>
+	</div>
+</body>
+</html>
