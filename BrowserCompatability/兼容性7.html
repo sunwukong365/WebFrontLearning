@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性7</title>
+	<style>
+		ul {
+			margin:0;
+			padding:0;
+			list-style:none;
+			width:300px;
+		}
+		li {
+			list-style:none;
+			height:12px;
+			border:1px solid #000;
+			/*float:left;*/
+			vertical-align:top;
+		}
+		a {
+			width:100px;
+			height:12px;
+			float:left;
+			background:red;
+		}
+		span {
+			width:100px;
+			height:12px;
+			float:right;
+			background:blue;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	例子借助li章节，稍作改动
+	此例子是把IE6 19px 和 li间隙 同时出现
+	回顾上个例子，当出现li间隙的时候，可以用float:left 或者 vertical-align:top 来解决； 但是当19px和li间隙同时出现时，vertical-align不能解决li间隙问题，只能用float来解决。
+	-->
+</body>
+</html>
