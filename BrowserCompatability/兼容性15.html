@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性15</title>
+	<style>
+		body{
+			background:yellow;
+		}
+		.box{
+			width:1000px;
+			height:1000px;
+			background:url("PNG-24图片透明示例.JPG")
+		}
+	</style>
+	<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+	<script>
+		DD_BelatedPNG.fix('.box');
+	</script>
+</head>
+<body>
+	<div class="box">
+	
+	</div>
+	<!--
+	IE6不能兼容图片透明，半透明问题
+	解决方法：用JS
+	此例子只是举例，引入JS，文件中用到的JS脚本细节在此章节中并没有出现。
+	-->
+</body>
+</html>

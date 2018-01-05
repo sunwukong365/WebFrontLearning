@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性17</title>
+	<style>
+		.box{
+			width:100px;
+			height:100px;
+			background:red;
+			+background:yellow; /*有了这一行，IE6,7显示黄色，其他浏览器以及IE8均显示红色*/
+			/*_background:yellow;*/ /*有了这一行，IE6,显示黄色，其他浏览器以及IE7,IE8均显示红色*/
+			/*background:yellow\9;*/  /*有了这一行，IE6,7,8显示黄色，其他浏览器显示红色*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<!--
+	css hack:
+	\9: ie10之前的ie浏览器解析的代码
+	+或*: ie7包括7之前的ie浏览器
+	_ :　ie6包括６之前的ie浏览器
+	
+	以上都不推荐使用。
+	-->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼容性1３</title>
+	<style>
+		body{
+			height:2000px;
+			background:red;
+		}
+		.box{
+			width:200px;
+			height:200px;
+			background:yellow;
+			position:fixed;
+			top:30px;
+			left:100px;
+			opacity:0.5; /*IE6,7,8 没有此属性*/
+			filter:alpha(opacity=50)  /*IE6,7,8的解决方法，要写两行代码，此行要写，上一行也需要写*/
+		}
+	</style>
+</head>
+<body>
+	<!--
+	
+	
+	-->
+	<div class="box">
+	
+	</div>
+</body>
+</html>
