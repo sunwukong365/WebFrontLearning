@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格5_合并单元格</title>
+	<style>
+		table{
+			border:1px solid red;
+			border-collapse:collapse;
+		}
+		td,th{
+			border:1px solid red;
+			padding:0;
+		}
+		td,th{
+			width:60px;
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	colspan="数值": 横向合并
+	rowspan="数值": 纵向合并
+	数值对应需要合并的单元格的数量
+	温馨提示: 被合并的单元格要删除,否则会多出单元格
+	-->
+	<table>
+			<tr>
+				<th colspan="2">星期1</th>
+				<th>星期2</th>
+				<th>星期3</th>
+				<th>星期4</th>
+				<th>星期5</th>
+			</tr>
+
+		<tbody>
+			<tr>
+				<td rowspan="3">数学</td>
+				<td>英语</td>
+				<td>语文</td>
+				<td>英语</td>
+				<td>数学</td>
+			</tr>
+			<tr>
+				<!--<td>语文</td>-->
+				<td>数学</td>
+				<td>数学</td>
+				<td>语文</td>
+				<td>语文</td>
+			</tr>
+			<tr>
+				<!--<td>英语</td>-->
+				<td>语文</td>
+				<td>英语</td>
+				<td>数学</td>
+				<td>英语</td>
+			</tr>
+			<tr>
+				<td>体育</td>
+				<td>品德</td>
+				<td>自然</td>
+				<td>体育</td>
+				<td>体育</td>
+			</tr>
+			<tr>
+				<td>美术</td>
+				<td>体育</td>
+				<td>音乐</td>
+				<td>美术</td>
+				<td>班会</td>
+			</tr>
+			<tr>
+				<td>音乐</td>
+				<td>自然</td>
+				<td>体育</td>
+				<td>品德</td>
+				<td>班会</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

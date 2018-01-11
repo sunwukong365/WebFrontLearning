@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单样式的初始化</title>
+	<style>
+		input{
+			margin:0;
+			padding:0;
+			putline:none;
+			}
+		optioni{
+			padding:0;
+		}
+		textarea{
+			padding:0;
+			resize:none;
+			outline:none;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	
+	-->
+	<form action="http://www.baidu.com" method="get" target="_blank">
+	用户名：<input type="text" value="" name="username">
+		<br/>
+		密码：<input type="password" value="" name="password">
+		<br/>
+		性别：男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女"> 其他<input type="radio" name="sex" value="guess">
+		<br/>
+		兴趣爱好：
+		吃<input type="checkbox" value="" name="xingqu">
+		喝<input type="checkbox" value="" name="xingqu">
+		看电影<input type="checkbox" value="" name="xingqu">
+		旅游<input type="checkbox" value="" name="xingqu">
+		摄影<input type="checkbox" value="" name="xingqu">
+		<br/>
+		上传<input type="file" name="shangchuan">
+		<br/>
+		按钮<input type="botton" name="btn" value="1">
+		<br/>
+		隐藏 ->
+			<input type="hidden" name="yincang" value="youcannotsee" />
+		<br/>
+			<input type="reset" name="re">
+		<br/>
+		
+	<select name="diqu" id="">
+			<option value="河北">河北</option>
+			<option value="上海">上海</option>
+			<option value="北京">北京</option>
+			<option value="广州">广州</option>
+			<option value="大连">大连</option>
+		</select>
+		<br>
+		<textarea name="wenben" id="" cols="30" rows="10">今天天气不错</textarea>
+		<br>
+		<input type="submit">
+	</form>
+</body>
+</html>

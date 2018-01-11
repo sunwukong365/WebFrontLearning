@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单控件</title>
+</head>
+<body>
+	<!--
+	form
+		action="需要传送到的地址"
+		method="传送的方式"
+			get: 在地址栏作内容作拼接，用户可以看到
+			post: 把表单元素里面的内容作拼接并且打包传送到action地址，用户看不到
+		
+		target=""或"_self": 在当前页打开
+		target="_blank":在新窗口页打开
+		
+		input的type类型
+			文本 text
+			密码 password
+			单选 radio
+			多选 checkbox
+			文件上传 file
+			按钮 button
+			隐藏 hidden
+			重置 reset
+			提交 submit
+	
+	温馨提示：
+	input里面标签的值都体现在value中
+	name属性一定要设置，如果不设置，无法实现上传提交
+	value如果用中文，会显示成%7%E%5等，尽量用英文
+	
+	https://www.baidu.com/?username=laobai&password=123&sex=on 这个对应于性别一栏中，没有加入value的时候，从此拼接出来的结果只能看出性别栏做了选择，但是并不知道选择了哪一项。
+	性别：男<input type="radio" name="sex"> 女<input type="radio" name="sex"> 其他<input type="radio" name="sex">
+	
+	性别：男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女"> 其他<input type="radio" name="sex" value="guess">
+	https://www.baidu.com/?username=laobai&password=123&sex=guess
+	-->
+	<form action="http://www.baidu.com" method="get" target="_blank">
+		用户名：<input type="text" value="" name="username">
+		<br/>
+		密码：<input type="password" value="" name="password">
+		<br/>
+		性别：男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女"> 其他<input type="radio" name="sex" value="guess">
+		<br/>
+		兴趣爱好：
+		吃<input type="checkbox" value="" name="xingqu">
+		喝<input type="checkbox" value="" name="xingqu">
+		看电影<input type="checkbox" value="" name="xingqu">
+		旅游<input type="checkbox" value="" name="xingqu">
+		摄影<input type="checkbox" value="" name="xingqu">
+		<br/>
+		上传<input type="file" name="shangchuan">
+		<br/>
+		按钮<input type="botton" name="btn" value="1">
+		<br/>
+		隐藏 ->
+			<input type="hidden" name="yincang" value="youcannotsee" />
+		<br/>
+			<input type="reset" name="re">
+		<br/>
+		<input type="submit">
+	</form>
+</body>
+</html>
